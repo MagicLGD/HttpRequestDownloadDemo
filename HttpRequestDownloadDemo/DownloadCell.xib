@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                     </view>
                     <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OJc-ij-08u">
                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -57,7 +57,7 @@
                         </state>
                     </button>
                     <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RDp-CO-OcO">
-                        <rect key="frame" x="50" y="29" width="50" height="59"/>
+                        <rect key="frame" x="50" y="27" width="50" height="59"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <state key="normal" image="button_pause_normal.png">
