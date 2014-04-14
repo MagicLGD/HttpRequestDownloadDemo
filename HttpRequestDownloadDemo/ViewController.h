@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownloadDelegate.h"
+#import "ASIHTTPRequest.h"
+@interface ViewController : UIViewController<ASIHTTPRequestDelegate,DownloadDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
-@interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UICollectionView * collectView;
+@property(nonatomic,strong)NSMutableArray *downingList;
 @end

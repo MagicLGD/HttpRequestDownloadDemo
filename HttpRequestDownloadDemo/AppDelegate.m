@@ -7,12 +7,30 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "DownListViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    DownListViewController * Firstcontroller = [[[DownListViewController alloc]initWithNibName:@"DownListViewController" bundle:nil]autorelease];
+    Firstcontroller.title = @"下载目录";
+    
+    
+    ViewController*secondController = [[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil]autorelease];
+    secondController.title = @"下载队列";
+    
+    
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController.delegate = self;
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:Firstcontroller, secondController, nil];
+    
+    
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
